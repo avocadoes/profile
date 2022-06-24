@@ -1,0 +1,177 @@
+.header {
+    width: 100%;
+    font-size:larger;
+}
+
+.tabs {
+    float: right;
+}
+
+.tab {
+    margin: 30px 30px 0px 30px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.current {
+    color: olive;
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fill {
+    background-color: rgb(232, 234, 224);
+    width: 800px;
+    padding: 30px 60px 30px 60px;
+}
+
+.small-fill {
+    background-color: rgb(232, 234, 224);
+    width: 250px;
+    margin-bottom: 60px;
+}
+
+.small-box {
+    padding: 30px 75px 30px 75px;
+}
+
+.white {
+    background-color: white;
+    font-size: large;
+}
+
+.title {
+    font-size: xx-large;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.subtitle {
+    font-size: x-large;
+    line-height: 1.5;
+}
+
+.block{
+    display: block;
+}
+
+.display {
+    display: inline-flex;
+    width:100%;
+    font-size: large;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    display:block;
+    width: fit-content;
+}
+
+.textbox {
+    width: fit-content;
+    line-height: 1.5;
+    text-align: left;
+
+}
+
+.crop {
+    width: 33%;
+}
+
+.top {
+    display:inline-flex;
+    align-items: center;
+    padding: 0px 30px 90px 0px;
+}
+
+.space-top {
+    margin-top: 30px;
+}
+
+.right {
+   display: flex;
+   text-align: right;
+   justify-content: right;
+   align-items: right;
+   
+   padding-right: 15px;
+}
+
+.small {
+    color: darkolivegreen;
+    font-size: medium;
+}
+
+.left {
+    text-align: left;
+    justify-content: left;
+    align-items: left;
+}
+
+.footer {
+    border-top: 1px solid #eaeaea;
+    display: flex;
+    flex: 1;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.center {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.icon {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-flex;
+    width: fit-content;
+    justify-content: center;
+}
+
+.space {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.pad {
+    padding: 15px;
+}
+
+.pad-1 {
+    padding-bottom: 1px;
+}
+
+.pad-right {
+    padding-right: 15px;
+}
+
+.large {
+    height: 60px;
+    width: 60px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color:olive;
+}
+
+* {
+    font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
