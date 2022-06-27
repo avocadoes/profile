@@ -5,6 +5,8 @@ const nextConfig = {
     loader: "custom",
     unoptimized: true,
   },
+  basePath: process.env.NODE_ENV,
+  assetPrefix: process.env.NODE_ENV
 }
 
 module.exports = nextConfig
