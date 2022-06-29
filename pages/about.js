@@ -23,8 +23,8 @@ export default function About() {
                     <SchoolIcon className='large' />&nbsp;&nbsp;
                     <span className='subtitle'>EDUCATION</span>                     
                 </div>
-                <div className='display left white'>
-                    <ul className='textbox'>                       
+                <div className='white'>
+                    <ul className='textbox pad-list'>                       
                         <li>Honours Bachelor of Science specializing in Computer Science</li>
                         <li>University of Toronto</li>
                         <li>September 2017 to June 2022</li>
@@ -36,8 +36,21 @@ export default function About() {
                     <div className='subtitle'>EXPERIENCED TOOLS</div>
                 </div>
 
-                <div className='display white'>               
-                    <ul className='textbox'>
+                <div className='display white pad-top pad-bot left'>
+                    <div className='block pad-lr bold'>
+                        <div>LANGUAGES</div>
+                        <div>FRAMEWORKS{' & '}LIBRARIES</div>
+                        <div>TESTING</div>
+                        <div>COLLABORATION</div>
+                        <div></div>
+                    </div>
+                    <div className='block'>
+                        <div>HTML, CSS, SCSS, JavaScript, TypeScript, C#, C, Python, SQL</div>
+                        <div>React, Next.js, Vue.js, Vuex, Blazor, MudBlazor, Tailwind CSS</div>
+                        <div>Mocha, Postman, GDB, Chrome DevTools</div>
+                        <div>Git, GitHub, Azure DevOps, Figma, MS Teams, Zoom, Slack</div>
+                    </div>               
+                    { /*<ul className='textbox'>
                         <li>HTML</li>
                         <li>CSS</li>                                                
                         <li>JavaScript</li>                       
@@ -71,7 +84,7 @@ export default function About() {
                         <li>Material UI</li>
                         <li>MudBlazor</li>
                         <li>Chrome DevTools</li> 
-                    </ul>
+                    </ul> */}
                 </div>
                 
                 <div className='display left space-top'>
@@ -84,16 +97,25 @@ export default function About() {
                         ENVIRONMENT AND CLIMATE CHANGE CANADA: Web Application Developer {"(Co-op)"}
                     </div>
                     <span className='right small'>August 2020 - August 2021</span>
-                    <span>Main responsibilities:</span>
-                    <ul className='textbox'>
+                    <span className='display left'>Main responsibilities:</span>
+                    <ul className='list'>
                         <li>
-                            Implementation, testing, and maintenance of an existing Vue application, RAMP4
+                            Collaborating in a remote, agile team environment.
                         </li>
                         <li>
-                            Planning, designing, and implementation of a new Blazor application, TABS
+                            Contributing to all phases of the SDLC.
                         </li>
                         <li>
-                            Contribute to daily scrum and weekly team meetings
+                            Improving/debugging existing features and documentation.
+                        </li>
+                        <li>
+                            Implementing new features/functions.
+                        </li>
+                        <li>
+                            Testing/evaluating the work of other team members.
+                        </li>
+                        <li>
+                            Planning and evaluating current goals during reccuring sprint meetings.
                         </li>
                     </ul>
                 </div>

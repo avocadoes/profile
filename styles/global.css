@@ -3,14 +3,19 @@
     font-size:larger;
 }
 
+.tab {
+    margin: 15px 30px 15px 30px;
+    display: inline-flex;
+    align-items: center;
+}
+
 .tabs {
     float: right;
 }
 
-.tab {
-    margin: 30px 30px 0px 30px;
-    display: inline-flex;
-    align-items: center;
+.subtitle {
+    font-size: larger;
+    line-height: 1.5;
 }
 
 .current {
@@ -41,18 +46,14 @@
 
 .white {
     background-color: white;
-    font-size: large;
+    font-size: medium;
+    line-height: 1.5;
 }
 
 .title {
     font-size: xx-large;
     text-align: center;
     margin-bottom: 30px;
-}
-
-.subtitle {
-    font-size: x-large;
-    line-height: 1.5;
 }
 
 .block{
@@ -98,13 +99,11 @@
    text-align: right;
    justify-content: right;
    align-items: right;
-   
-   padding-right: 15px;
 }
 
 .small {
     color: darkolivegreen;
-    font-size: medium;
+    font-size: smaller;
 }
 
 .left {
@@ -149,22 +148,41 @@
     padding: 15px;
 }
 
-.pad-1 {
-    padding-bottom: 1px;
+.pad-top {
+    padding-top: 15px;
 }
 
-.pad-right {
-    padding-right: 15px;
+.pad-bot {
+    padding-bottom: 15px;
+    font-size: medium;
+}
+
+.pad-lr {
+    padding-right: 30px;
+    padding-left: 15px;
+}
+
+.pad-list {
+    padding: 15px 15px 15px 30px;
+    margin: 0px;
+}
+
+.list {
+    margin: 0px
 }
 
 .large {
-    height: 60px;
-    width: 60px;
+    height: 30px;
+    width: 30px;
 }
 
 .image {
     max-height: 450px;
     max-width: 450px;
+}
+
+.bold {
+    font-weight: 600;
 }
 
 a {

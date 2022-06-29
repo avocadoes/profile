@@ -3,10 +3,10 @@ import DashboardIcon from '@mui/icons-material/Dashboard';
 import { useRouter } from 'next/router';
 
 export default function Header() {
-    const route = useRouter().pathname
     let about = <a className='tab'>ABOUT</a>
     let work = <a className='tab'>WORK</a>
     let contact = <a className='tab'>CONTACT</a>
+    const route = useRouter().pathname
 
     if (route == "/about") {
         about = <a className='tab current'>ABOUT</a>

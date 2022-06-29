@@ -27,35 +27,32 @@ export default function Work() {
                         <div className='display left'>
                             Main responsibilities:
                         </div>
-                        <ul>
-                            <li>
-                                Contributing to existing project in development in a remote, agile team environment.
-                            </li>
+                        <ul className='list'>
                             <li>
                                 Planning/evaluating current goals with team members during reccuring sprint meetings.
                             </li>
                             <li>
-                                Identifying and fixing existing bugs in project.
+                                Identifying and fixing existing bugs in the project.
                             </li>
                             <li>
-                                Creating new features/improving existing features.
+                                Creating new features and improving existing features.
                             </li>
                             <li>
-                                Improving existing documentation of project.
+                                Improving existing documentation of the project.
                             </li>
                             <li>
-                                Testing/evaluating the work of other team members.
+                                Testing and evaluating the work of other team members.
                             </li>
                             <li>
-                                Participate in daily scrum and weekly team meetings.
+                                Contribute to daily scrum and weekly team meetings.
                             </li>
                         </ul>
-                        <div className='display left'>
+                        <div className='display left pad-top'>
                             Main tools used:
                         </div>
-                        <ul>
+                        <ul className='list'>
                             <li>
-                                Typescript, HTML, SCSS, Vue.js, Vuex, Tailwind CSS, AG Grid, Chrome DevTools, Git, GitHub, Slack, MS Teams, Zoom
+                                Typescript, HTML, SCSS, Vue.js, Vuex, Tailwind CSS, Chrome DevTools, Git, GitHub, Slack, MS Teams, Zoom
                             </li>
                         </ul>
                         <a className='display right' href='https://github.com/ramp4-pcar4/ramp4-pcar4'>
@@ -71,30 +68,30 @@ export default function Work() {
                         <div className='display left'>
                             Main responsibilities: 
                         </div>
-                        <ul>
+                        <ul className='list'>
                             <li>
-                                Evaluating goals, audience, scope, purpose, and timeline of new project with clients and team members.
+                                Evaluating goals, audience, scope, purpose, and timeline of new project with team members.
                             </li>
                             <li>
                                 Defining content, functional requirements, and toolchain.
                             </li>
                             <li>
-                                Designing low-fidelity and high-fidelity prototype in Figma with user feedback.
+                                Designing a low-fidelity and high-fidelity prototype in Figma with user feedback.
                             </li>
                             <li>
-                                Implementing design with previously defined tools.
+                                Implementing design with Blazor and other previously defined tools.
                             </li>
                             <li>
-                                Regularly meeting with team members and clients for project feedback.
+                                Regularly meeting with team members and clients for feedback and updates.
                             </li>
                             <li>
-                                Thoroughly document project processes in shared MS OneNote.
+                                Thoroughly document project processes in a shared MS OneNote folder.
                             </li>
                         </ul>
-                        <div className='display left'>
+                        <div className='display left pad-top'>
                             Main tools used:
                         </div>
-                        <ul>
+                        <ul className='list'>
                             <li>
                                 C#, Razor Pages, Blazor, Figma, Azure DevOps, MudBlazor, MS Teams, MS OneNote, Zoom
                             </li>
@@ -112,7 +109,7 @@ export default function Work() {
                         <div className='display left'>
                             Responsibilities:
                         </div>
-                        <ul>
+                        <ul className='list'>
                             <li>
                                 Evaluating goals, audience, scope, purpose, and timeline.
                             </li>
@@ -123,10 +120,10 @@ export default function Work() {
                                 Designing user interface {" (low-fidelity prototype) "} on Figma.
                             </li>
                             <li>
-                                Implementing design using previously defined tools.
+                                Implementing design using React and other previously defined tools.
                             </li>
                             <li>
-                                Testing implementation using Chrome DevTools.
+                                Testing current implementation using Chrome DevTools.
                             </li>
                             <li>
                                 Deploying project using GitHub Pages.
@@ -135,15 +132,15 @@ export default function Work() {
                                 Performing maintenance checks after website is deployed.
                             </li>
                         </ul>
-                        <div className='display left'>
+                        <div className='display left pad-top'>
                             Tools used:
                         </div>
-                        <ul>
+                        <ul className='list'>
                             <li>
-                                JavaScript, CSS, JSX, React, Next.js, Figma, GitHub Pages, Chrome DevTools, Material UI, MS OneNote
+                                JavaScript, CSS, React, Next.js, Figma, GitHub Pages, Chrome DevTools, Material UI, MS OneNote
                             </li>
                         </ul>
-                        <a className='display right' href=''>
+                        <a className='display right' href='https://github.com/avocadoes/profile'>
                             <ArrowRightAltIcon />public repository<ArrowRightAltIcon />
                         </a>
                     </div>
@@ -152,13 +149,13 @@ export default function Work() {
                         <DevicesIcon className='large' />&nbsp;&nbsp;
                         <span className='subtitle'>STUDENT WORK SAMPLES</span>                     
                     </div>
-                    <div className='white pad pad-1'>
+                    <div className='white pad'>
                         <div className='display left'>
                             HTTP SERVER
                         </div>
-                        <ul>
+                        <ul className='list'>
                             <li>
-                                Key words: thorough documentation, unit testing, sockets, group project
+                                Key notes: thorough documentation, unit testing, sockets, group project
                             </li>
                             <li>
                                 Main tools: JavaScript, Node.js, Mocha, GitHub
@@ -170,9 +167,9 @@ export default function Work() {
                         <div className='display left'>
                             MOBILE PROTOTYPE: AVODIARY
                         </div>
-                        <ul>
+                        <ul className='list'>
                             <li>
-                                Key words: high fidelity prototype, usability testing, group project
+                                Key notes: high fidelity prototype, usability testing, group project
                             </li>
                             <li>
                                 Main tools: Figma, Zoom
