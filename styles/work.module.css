@@ -18,12 +18,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .subtitle {
     font-size: 1.25rem;
     font-weight: bold;
     line-height: 1.75rem;
+    text-align: center;
 }
 
 .image {
@@ -48,6 +50,7 @@
 
 .label {
     font-size: smaller;
+    text-align: center;
 }
 
 .link {

@@ -90,6 +90,6 @@
         grid-column: 2;
     }
     .text {
-        grid-column: 1;
+        grid-column: 1/3;
     }
 }

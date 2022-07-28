@@ -46,7 +46,7 @@ export default function Work() {
                         <div className={styles.subtitle}>
                             <DevicesIcon className={styles.icon} />&nbsp; TABS
                         </div>
-                        <div>ENVIRONMENT AND CLIMATE CHANGE CANADA</div>
+                        <div className={styles.label}>ENVIRONMENT AND CLIMATE CHANGE CANADA</div>
                         <div className={styles.textbox}>06/2021 - 08/2021</div>
                         <div className={styles.textbox}>A Blazor application.</div>
                         <div className={styles.disable + ' button ' + styles.link}>
