@@ -1,36 +1,46 @@
 import Link from 'next/link'
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import { useRouter } from 'next/router';
+import styles from '../../styles/header.module.css'
 
 export default function Header() {
-    let about = <a className='tab'>ABOUT</a>
-    let work = <a className='tab'>WORK</a>
-    let contact = <a className='tab'>CONTACT</a>
+    let about = styles.tab
+    let work = styles.tab
+    let contact = styles.tab
+
+
+/*    let about = <a className='inline-flex mx-4 my-4 items-center'>ABOUT</a>
+    let work = <a className='inline-flex mx-4 my-4 items-center'>WORK</a>
+    let contact = <a className='inline-flex mx-4 my-4 items-center'>CONTACT</a>
+*/
     const route = useRouter().pathname
 
     if (route == "/about") {
-        about = <a className='tab current'>ABOUT</a>
+        //about = <a className='inline-flex mx-4 my-4 items-center text-olive'>ABOUT</a>
+        about += ' ' + styles.current
     } else if (route == "/work") {
-        work = <a className='tab current'>WORK</a>
+        //work = <a className='inline-flex mx-4 my-4 items-center text-olive'>WORK</a>
+        work += ' ' + styles.current
     } else if (route == "/contact") {
-        contact = <a className='tab current'>CONTACT</a>
+        //contact = <a className='inline-flex mx-4 my-4 items-center text-olive'>CONTACT</a>
+        contact += ' ' + styles.current
     }
     return (
-        <div className='header'>
+        <div className={styles.container}>
             <Link href="/">
-                <a className='tab'>
+                <a className={styles.title}>
                     <DashboardIcon />&nbsp; MAGGIE ZHU
                 </a>
             </Link>
-            <span className='tabs'>
+            <span className={styles.tabs}>
                 <Link href="/about">
-                    {about}
+                    <a className={about}>ABOUT</a>
                 </Link>
                 <Link href="/work">
-                    {work}
+                    <a className={work}>PROJECTS</a>
                 </Link>
                 <Link href="/contact">
-                    {contact}
+                    <a className={contact}>SOCIALS</a>
                 </Link>
             </span>
             

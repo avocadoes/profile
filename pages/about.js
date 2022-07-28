@@ -7,9 +7,10 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos'
 import Header from './components/header'
 import Footer from './components/footer'
 import Page from './components/page'
+import styles from '../styles/about.module.css'
 
 export default function About() {
-    // TODO: group tools into subgroups, edit points to responsibilities
+    // TODO: add details dropdown to skills
     return (
         <div>
             <Head>
@@ -18,87 +19,93 @@ export default function About() {
 
             <main>
                 <Header></Header>
+                <div className={styles.container}>
+                    <div className={styles.title}>ABOUT ME</div>
+                    <div className={styles.subtitle}>
+                        <SchoolIcon className='icon' />&nbsp; EDUCATION
+                    </div>
+                    <div className={styles.date}>09/2017 - 06/2022</div>
+                    <div className={styles.text}>
+                        <div className={styles.label}>Univeristy of Toronto</div>                       
+                        <div>Honours Bachelor of Science specializing in Computer Science</div>
+                    </div>
+                    <div className={styles.subtitle}>
+                        <SettingsIcon className='icon' />&nbsp; SKILLS
+                    </div>
+                    <div className={styles.date}>09/2017-present</div>
+                    <div className={styles.text}>
+                        <div className={styles.label}>HTML, CSS, SCSS, Tailwind CSS</div>
+                        <div className={styles.label}>JavaScript, TypeScript, Python</div>
+                        <div className={styles.label}>React.js, Next.js, Vue.js, Vuex</div>
+                        <div className={styles.label}>Git, Node.js, npm, Yarn, Vim</div>
+                        <div className={styles.label}>C#, Blazor, MudBlazor</div>
+                        <div className={styles.label}>GitHub, Azure DevOps, Agile Methodology</div>
+                        <div className={styles.label}>Mocha, Postman, Chrome DevTools</div>
+                    </div>
+                    <div className={styles.subtitle}>
+                        <WorkIcon className={styles.icon} />&nbsp; WORK EXPERIENCE
+                    </div>
+                    <div className={styles.date}>08/2020 - 08/2021</div>
+                    <div className={styles.text}>
+                        <div className={styles.job}>Web Application Developer</div>
+                        <div className={styles.company}>ENVIRONMENT AND CLIMATE CHANGE CANADA</div>
+                        <div>
+                            Over the course of my student work term, I collaborated in a remote, agile team environment and contributed to all 
+                            phases of the SDLC.
+                        </div>
+                    </div>
+                    <Link href='/work'>
+                        <a className={'button ' + styles.button}><ArrowForwardIosIcon />&nbsp; Personal and Work Projects &nbsp;<ArrowForwardIosIcon /></a>
+                    </Link>
+                </div>
+{/*
                 <Page>
-                <div className='display left '>
-                    <SchoolIcon className='large' />&nbsp;&nbsp;
-                    <span className='subtitle'>EDUCATION</span>                     
-                </div>
-                <div className='white'>
-                    <ul className='textbox pad-list'>                       
-                        <li>Honours Bachelor of Science specializing in Computer Science</li>
-                        <li>University of Toronto</li>
-                        <li>September 2017 to June 2022</li>
-                    </ul> 
+                <div className='text-3xl font-bold py-7'>ABOUT ME</div>
+
+                <div className='flex justify-between items-start py-7'>
+                    <div className='flex text-left w-1/3'>
+                        <SchoolIcon className='h-8 w-8' />&nbsp;&nbsp;
+                        <span className='text-xl font-bold'>EDUCATION</span>                     
+                    </div>
+                    <div className='w-1/3'>
+                        09/2017 - 06/2022
+                    </div>
+                    <div className='m-0'>
+                        <div className='font-bold'>Univeristy of Toronto</div>                       
+                        <div>Honours Bachelor of Science specializing in Computer Science</div>
+                    </div> 
                 </div>
 
-                <div className='display left space-top'>
-                    <SettingsIcon className='large' />&nbsp;&nbsp;
-                    <div className='subtitle'>EXPERIENCED TOOLS</div>
-                </div>
-
-                <div className='display white pad-top pad-bot left'>
-                    <div className='block pad-lr bold'>
+                <div className='flex justify-between items-start py-7 border-t-1 border-solid border-olive'>
+                    <div className='flex text-left w-1/3'>
+                        <SettingsIcon className='h-8 w-8' />&nbsp;&nbsp;
+                        <div className='text-xl font-bold'>SKILLS</div>
+                    </div>
+                    <div className='inline-grid grid-rows-4 grid-flow-col gap-2'>
                         <div>LANGUAGES</div>
                         <div>FRAMEWORKS{' & '}LIBRARIES</div>
                         <div>TESTING</div>
                         <div>COLLABORATION</div>
-                        <div></div>
-                    </div>
-                    <div className='block'>
                         <div>HTML, CSS, SCSS, JavaScript, TypeScript, C#, C, Python, SQL</div>
                         <div>React, Next.js, Vue.js, Vuex, Blazor, MudBlazor, Tailwind CSS</div>
                         <div>Mocha, Postman, GDB, Chrome DevTools</div>
                         <div>Git, GitHub, Azure DevOps, Figma, MS Teams, Zoom, Slack</div>
-                    </div>               
-                    { /*<ul className='textbox'>
-                        <li>HTML</li>
-                        <li>CSS</li>                                                
-                        <li>JavaScript</li>                       
-                        <li>C#</li>
-                        <li>C</li>                        
-                    </ul>
-                    <ul className='textbox'>
-                        <li>TypeScript</li>
-                        <li>SCSS</li>
-                        <li>JSX</li>
-                        <li>Razor Pages</li>
-                        <li>Python</li>
-                    </ul>
-                    <ul className='textbox'>
-                        <li>React</li>
-                        <li>Next.js</li>
-                        <li>Vue.js</li>
-                        <li>Node.js</li>                        
-                        <li>Blazor</li>                       
-                    </ul>
-                    <ul className='textbox'>
-                        <li>GitHub</li>
-                        <li>Azure DevOps</li>                       
-                        <li>Docker</li>
-                        <li>Postman</li>
-                        <li>Mocha</li>
-                    </ul>
-                    <ul className='textbox'>
-                        <li>Figma</li>     
-                        <li>Tailwind CSS</li>
-                        <li>Material UI</li>
-                        <li>MudBlazor</li>
-                        <li>Chrome DevTools</li> 
-                    </ul> */}
+                    </div>
                 </div>
                 
-                <div className='display left space-top'>
-                    <WorkIcon className='large' />&nbsp;&nbsp;
-                    <div className='subtitle'>WORK HISTORY</div>                 
-                </div>
-
-                <div className='white pad'>
-                    <div className='display left'>
-                        ENVIRONMENT AND CLIMATE CHANGE CANADA: Web Application Developer {"(Co-op)"}
+                <div className='flex justify-between items-start py-7 border-t-1 border-solid border-olive'>
+                    <div className='flex text-left w-1/3'>
+                        <WorkIcon className='h-8 w-8' />&nbsp;&nbsp;
+                        <div className='text-xl font-bold'>WORK{'\n'}EXPERIENCE</div>                 
                     </div>
-                    <span className='right small'>August 2020 - August 2021</span>
-                    <span className='display left'>Main responsibilities:</span>
-                    <ul className='list'>
+
+                    <div className='w-1/3'>08/2020 - 08/2021</div>
+                    
+                    <ul className='m-0'>
+                        <div className='font-bold'>Web Application Developer</div>
+                        <div>ENVIRONMENT AND CLIMATE CHANGE CANADA</div>
+                        
+                        <span className='display left'>Main responsibilities:</span>
                         <li>
                             Collaborating in a remote, agile team environment.
                         </li>
@@ -119,16 +126,18 @@ export default function About() {
                         </li>
                     </ul>
                 </div>
+
                 <div className='space-top'>
                     <Link href='/work'>
                         <a className='display'>
                             <ArrowForwardIosIcon />Personal and Work Projects<ArrowForwardIosIcon />
                         </a>
                     </Link>
-                </div>             
+                </div> 
+           
                 </Page>
+*/} 
             </main>
-
             <Footer></Footer>
         </div>
     )

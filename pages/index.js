@@ -1,14 +1,11 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos'
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import Header from './components/header'
 import Footer from './components/footer'
 import pic from '../public/cropped.png'
-
-const customLoader = ({src}) => {
-  return src
-}
+import styles from '../styles/home.module.css'
 
 export default function Home() {
   return (
@@ -21,22 +18,18 @@ export default function Home() {
 
       <main>
         <Header></Header>
-        <div className='space'>
-        <div className='display center'>
-          <div className='image'>
-            <Image className='image' src={pic} alt="profile picture" loader={customLoader} />
-          </div>
-          <div className='text'>
-            <span className='title'>Hello</span>
-            <div className='space'>
+        <div className={styles.container}>
+          <Image height={450} width={450} src={pic} alt="profile picture" />
+          <div className={styles.text}>
+            <span className={styles.heading}>Hello</span>
+            <div className={styles.textbox}>
               Welcome to my profile.
             </div>
             <Link href='/about'>
-              <a className='display'><ArrowForwardIosIcon />About me<ArrowForwardIosIcon /></a>
+              <a className='button'><ArrowForwardIosIcon />&nbsp; About me &nbsp;<ArrowForwardIosIcon /></a>
             </Link>
           </div>
-        </div>
-        </div>    
+        </div>   
       </main>
 
       <Footer></Footer>

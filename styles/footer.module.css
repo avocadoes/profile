@@ -1,0 +1,41 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem;
+    margin-top: 0.5rem;
+}
+
+.socials {
+    display: flex;
+    width: fit-content;
+}
+
+.label {
+    margin-top: 2.5rem;
+    align-self: end;
+}
+
+.spacing {
+    margin: 0rem 0.5rem 0rem 0.5rem;
+}
+
+@media (prefers-color-scheme: light) {
+    .footer {
+        background: #ececec;
+    }
+    .footer * {
+        background: #ececec;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .footer {
+        background: #141414;
+    }
+    .footer * {
+        background: #141414;
+    }
+}

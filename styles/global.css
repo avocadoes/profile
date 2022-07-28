@@ -1,200 +1,53 @@
-.header {
-    width: 100%;
-    font-size:larger;
-}
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-.tab {
-    margin: 15px 30px 15px 30px;
-    display: inline-flex;
-    align-items: center;
-}
-
-.tabs {
-    float: right;
-}
-
-.subtitle {
-    font-size: larger;
-    line-height: 1.5;
-}
-
-.current {
-    color: olive;
-}
-
-.page {
+.button {
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-
-.fill {
-    background-color: rgb(232, 234, 224);
-    width: 800px;
-    padding: 30px 60px 30px 60px;
-}
-
-.small-fill {
-    background-color: rgb(232, 234, 224);
-    width: 250px;
-    margin-bottom: 60px;
-}
-
-.small-box {
-    padding: 30px 75px 30px 75px;
-}
-
-.white {
-    background-color: white;
-    font-size: medium;
-    line-height: 1.5;
-}
-
-.title {
-    font-size: xx-large;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.block{
-    display: block;
-}
-
-.display {
-    display: inline-flex;
-    width:100%;
-    font-size: large;
-    justify-content: center;
-    align-items: center;
-}
-
-.text {
-    display:block;
     width: fit-content;
-}
-
-.textbox {
-    width: fit-content;
-    line-height: 1.5;
-    text-align: left;
-
-}
-
-.crop {
-    width: 33%;
-}
-
-.top {
-    display:inline-flex;
-    align-items: center;
-    padding: 0px 30px 90px 0px;
-}
-
-.space-top {
-    margin-top: 30px;
-}
-
-.right {
-   display: flex;
-   text-align: right;
-   justify-content: right;
-   align-items: right;
-}
-
-.small {
-    color: darkolivegreen;
-    font-size: smaller;
-}
-
-.left {
-    text-align: left;
-    justify-content: left;
-    align-items: left;
-}
-
-.footer {
-    border-top: 1px solid #eaeaea;
-    display: flex;
-    flex: 1;
-    padding: 30px;
-    justify-content: center;
-    align-items: center;
-}
-
-.center {
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.icon {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    display: inline-flex;
-    width: fit-content;
-    justify-content: center;
-}
-
-.space {
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-.pad {
-    padding: 15px;
-}
-
-.pad-top {
-    padding-top: 15px;
-}
-
-.pad-bot {
-    padding-bottom: 15px;
-    font-size: medium;
-}
-
-.pad-lr {
-    padding-right: 30px;
-    padding-left: 15px;
-}
-
-.pad-list {
-    padding: 15px 15px 15px 30px;
-    margin: 0px;
-}
-
-.list {
-    margin: 0px
-}
-
-.large {
-    height: 30px;
-    width: 30px;
-}
-
-.image {
-    max-height: 450px;
-    max-width: 450px;
-}
-
-.bold {
-    font-weight: 600;
-}
-
-a {
-    color: black;
-    text-decoration: none;
-}
-
-a:hover {
-    color:olive;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    outline: 0.125rem solid;
+    border-radius: 0.5rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
 }
 
 * {
-    font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: Helvitica, Sans-Serif;
+}
+
+@media (prefers-color-scheme: light) {
+    * {
+        color: black;
+        background: white;
+    }
+    a {
+        color: black;
+        text-decoration: none;
+    }
+    .button:hover {
+        background:  #e3eaf7;
+    }
+    .button:hover * {
+        background:  #e3eaf7;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    * {
+        color: white;
+        background: #212121;
+    }
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    .button:hover {
+        background: #2e2e2e;
+    }
+    .button:hover * {
+        background: #2e2e2e;
+    }
 }

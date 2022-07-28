@@ -1,0 +1,95 @@
+.container {
+    display: grid;
+    grid-template-columns: 3fr 1.5fr 4fr;
+    max-width: 60rem;
+    padding: 2rem 4rem 2rem 4rem;
+    row-gap: 3rem;
+    column-gap: 0.5rem;
+    align-items: start;
+    margin: 0 auto;
+}
+
+.title {
+    grid-column: 1/4;
+    justify-self: center;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 5rem;
+    margin: 2rem 0rem 2rem 0rem;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    font-weight: bold;
+    line-height: 1.75rem;
+}
+
+.icon {
+    height: 2rem;
+    width: 2rem;
+}
+
+.date {
+    font-size: 0.875rem;
+    font-weight: normal;
+    line-height: 1.25rem;
+}
+
+.text {
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.5rem;
+}
+
+.label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.job {
+    font-weight: bold;
+}
+
+.company {
+    margin-bottom: 0.5rem;
+}
+
+.button {
+    grid-column: 1/4;
+    justify-self: center;
+    margin: 2rem 0rem 2rem 0rem;
+}
+
+@media (prefers-color-scheme: light) {
+    .container {
+        background: #f6f6f6;
+    }
+    .container * {
+        background: #f6f6f6;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .container {
+        background: #191919;
+    }
+    .container * {
+        background: #191919;
+    }
+}
+
+@media (max-width: 52rem) {
+    .container {
+        grid-template-columns: 1fr;
+        column-gap: 0;
+    }
+    .subtitle {
+        grid-column: 1;
+    }
+    .date {
+        grid-column: 2;
+    }
+    .text {
+        grid-column: 1;
+    }
+}
