@@ -1,11 +1,11 @@
 ## My Portfolio
-Access the website [here](https://avocadoes.github.io/profile).
+Access the website [here](https://profile-avocadoes.vercel.app/).
 
-## Setup notes
+## Development setup
 Install node of version [16.x](https://nodejs.org/en/download/) and then run: `npm install`
 
 To run development: `npm run dev`
 
-To run production: `npm run build`
+To run production: `npm run build` then `npm run start`
 
-In your browser open: `http://localhost:3000/`
+To open in browser: `http://localhost:3000/`
