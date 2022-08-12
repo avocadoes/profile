@@ -106,7 +106,7 @@ export default function Work() {
                         </div>
                         <div className={styles.textbox}>Tools and Technologies:</div>
                         <div className={styles.textbox}>
-                            JavaScript, CSS, React, Next.js, Vercel, Chrome DevTools, Figma, Material UI
+                            JavaScript, CSS, React, Redux, Node.js, Express.js, MongoDB, Mongoose, JSON Web Tokens, Postman, Heroku
                         </div>
                         <div className={styles.link}>
                             <a className='button' href='https://mynoteboard.herokuapp.com/'>
