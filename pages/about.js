@@ -32,15 +32,21 @@ export default function About() {
                     <div className={styles.subtitle}>
                         <SettingsIcon className='icon' />&nbsp; SKILLS
                     </div>
-                    <div className={styles.date}>09/2017-present</div>
-                    <div className={styles.text}>
-                        <div className={styles.label}>HTML, CSS, SCSS, Tailwind CSS</div>
-                        <div className={styles.label}>JavaScript, TypeScript, Python</div>
-                        <div className={styles.label}>React.js, Next.js, Vue.js, Vuex</div>
-                        <div className={styles.label}>Git, Node.js, npm, Yarn, Vim</div>
-                        <div className={styles.label}>C#, Blazor, MudBlazor</div>
-                        <div className={styles.label}>GitHub, Azure DevOps, Agile Methodology</div>
-                        <div className={styles.label}>Mocha, Postman, Chrome DevTools</div>
+                    <div className={styles.label}>
+                        <div>Languages</div>
+                        <div>Front-end</div>
+                        <div>Back-end</div>
+                        <div>Testing</div>
+                        <div>Collaboration</div>
+                        <div>Concepts</div>
+                    </div>
+                    <div className={styles.text + ' ' + styles.two}>
+                        <div>HTML, CSS, SCSS, JavaScript, TypeScript, C#, C, Python, SQL</div>
+                        <div>React, Next.js, Redux, Vue.js, Vuex, Blazor, MudBlazor, Tailwind CSS</div>
+                        <div>Node.js, Express.js, MongoDB, Mongoose, Heroku</div>
+                        <div>Mocha, Postman, GDB, Redux DevTools</div>
+                        <div>Git, GitHub, Azure DevOps, Figma, MS Teams, Zoom, Slack</div>
+                        <div>HTTP methods, CRUD operations, REST API, Agile SDLC</div>
                     </div>
                     <div className={styles.subtitle}>
                         <WorkIcon className={styles.icon} />&nbsp; WORK EXPERIENCE
@@ -50,8 +56,8 @@ export default function About() {
                         <div className={styles.job}>Web Application Developer</div>
                         <div className={styles.company}>ENVIRONMENT AND CLIMATE CHANGE CANADA</div>
                         <div>
-                            Over the course of my student work term, I collaborated in a remote, agile team environment and contributed to all 
-                            phases of the SDLC.
+                            Over the course of my work term, I collaborated in a remote, agile team environment and contributed to all 
+                            phases of the SDLC. I mainly worked on developing an existing web application, RAMP4, and planning/developing a new web application, TABS.
                         </div>
                     </div>
                     <Link href='/work'>

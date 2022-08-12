@@ -23,15 +23,14 @@ export default function Home() {
           <div className={styles.text}>
             <span className={styles.heading}>Hello</span>
             <div className={styles.textbox}>
-              Welcome to my profile.
+              Welcome to my online portfolio.
             </div>
             <Link href='/about'>
-              <a className='button'><ArrowForwardIosIcon />&nbsp; About me &nbsp;<ArrowForwardIosIcon /></a>
+              <a className='button'><ArrowForwardIosIcon />&nbsp; About Me &nbsp;<ArrowForwardIosIcon /></a>
             </Link>
           </div>
         </div>   
       </main>
-
       <Footer></Footer>
     </div>
   )

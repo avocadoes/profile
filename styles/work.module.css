@@ -1,7 +1,7 @@
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    max-width: fit-content;
+    max-width: 65rem;
     padding: 2rem 4rem 2rem 4rem;
     gap: 5rem;
     align-items: center;
@@ -75,19 +75,13 @@
 }
 
 @media (prefers-color-scheme: light) {
-    .container {
-        background: #f6f6f6;
-    }
-    .container * {
+    .container, .container *{
         background: #f6f6f6;
     }
 }
 
 @media (prefers-color-scheme: dark) {
-    .container {
-        background: #191919;
-    }
-    .container * {
+    .container, .container * {
         background: #191919;
     }
 }
@@ -108,5 +102,5 @@
     }
     .seven {
         grid-row: 7;
-    }
+    }  
 }
