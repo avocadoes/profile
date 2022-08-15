@@ -33,10 +33,7 @@
 }
 
 @media (prefers-color-scheme: light) {
-    .container {
-        background: #f6f6f6;
-    }
-    .container * {
+    .container, .container * {
         background: #f6f6f6;
     }
     .link:hover * {
@@ -45,10 +42,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-    .container {
-        background: #191919;
-    }
-    .container * {
+    .container, .container * {
         background: #191919;
     }
     .link:hover * {

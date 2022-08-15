@@ -23,10 +23,10 @@ export default function Home() {
           <div className={styles.text}>
             <span className={styles.heading}>Hello</span>
             <div className={styles.textbox}>
-              Welcome to my online portfolio.
+              Welcome to my online portfolio. I am a recent graduate and aspiring software developer.
             </div>
             <Link href='/about'>
-              <a className='button'><ArrowForwardIosIcon />&nbsp; About Me &nbsp;<ArrowForwardIosIcon /></a>
+              <a className={styles.button + ' button'}><ArrowForwardIosIcon />&nbsp; About Me &nbsp;<ArrowForwardIosIcon /></a>
             </Link>
           </div>
         </div>   

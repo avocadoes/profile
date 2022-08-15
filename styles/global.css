@@ -28,10 +28,7 @@
         color: black;
         text-decoration: none;
     }
-    .button:hover {
-        background:  #e3eaf7;
-    }
-    .button:hover * {
+    .button:hover, .button:hover * {
         background:  #e3eaf7;
     }
 }
@@ -39,16 +36,13 @@
 @media (prefers-color-scheme: dark) {
     * {
         color: white;
-        background: #212121;
+        background: #272a2e;
     }
     a {
         color: white;
         text-decoration: none;
     }
-    .button:hover {
-        background: #2e2e2e;
-    }
-    .button:hover * {
+    .button:hover, .button:hover * {
         background: #2e2e2e;
     }
 }

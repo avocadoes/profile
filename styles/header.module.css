@@ -36,10 +36,7 @@
 }
 
 @media (prefers-color-scheme: light) {
-    .container {
-        background: #ececec;
-    }
-    .container * {
+    .container, .container * {
         background: #ececec;
     }
     .current {
@@ -51,10 +48,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-    .container {
-        background: #141414;
-    }
-    .container * {
+    .container, .container * {
         background: #141414;
     }
     .current {

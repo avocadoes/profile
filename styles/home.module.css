@@ -26,20 +26,19 @@
 }
 
 .textbox {
-    margin: 2rem 0rem 2rem 0rem
-}
-
-.button {
-    display: flex;
-    justify-content: center;
-    width: fit-content;
-    padding: 0.5rem 1rem 0.5rem 1rem;
-    outline: 0.125rem solid;
-    border-radius: 0.5rem;
+    margin: 2rem 0rem 2rem 2rem;
+    text-align: left;
+    max-width: 16rem;
 }
 
 @media (max-width: 42rem) {
     .container {
         flex-direction: column;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .button:hover, .button:hover * {
+        background: #3f3f3f;
     }
 }

@@ -83,7 +83,7 @@ export default function Work() {
                         </div>
                         <div className={styles.link}>
                             <a className='button' href='https://www.figma.com/proto/0YLIwwourJrd0J31eOH5BY/Profile?node-id=304%3A80&starting-point-node-id=304%3A80&scaling=scale-down'>
-                                figma prototype &nbsp; <OpenInNewIcon />
+                                Figma prototype &nbsp; <OpenInNewIcon />
                             </a>
                             <a className='button' href='https://github.com/avocadoes/profile'>
                                 public repository &nbsp; <OpenInNewIcon />
