@@ -46,7 +46,7 @@ export default function About() {
                         <div>Node.js, Express.js, MongoDB, Mongoose, Heroku</div>
                         <div>Mocha, Postman, GDB, Redux DevTools</div>
                         <div>Git, GitHub, Azure DevOps, Figma, MS Teams, Zoom, Slack</div>
-                        <div>HTTP methods, CRUD operations, REST API, Agile Methodology</div>
+                        <div>HTTP methods, CRUD operations, REST API, Agile Methodology, SDLC</div>
                     </div>
                     <div className={styles.subtitle}>
                         <WorkIcon className={styles.icon} />&nbsp; WORK EXPERIENCE

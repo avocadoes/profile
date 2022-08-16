@@ -19,7 +19,7 @@ export default function Home() {
       <main>
         <Header></Header>
         <div className={styles.container}>
-          <Image height={450} width={450} src={pic} alt="profile picture" />
+          <Image height={450} width={450} src={pic} priority={true} alt="profile picture" />
           <div className={styles.text}>
             <span className={styles.heading}>Hello</span>
             <div className={styles.textbox}>

@@ -45,10 +45,10 @@ export default function Work() {
                         </a>
                     </div>
                     <div className={styles.image + ' ' + styles.two}>
-                        <Image height={350} width={400} src={project1} alt="work project 1" />
+                        <Image height={350} width={400} src={project1} priority={true} alt="work project 1" />
                     </div>
                     <div className={styles.image}>
-                        <Image height={350} width={400} src={project2} alt="work project 2" />
+                        <Image height={350} width={400} src={project2} priority={true} alt="work project 2" />
                     </div>
                     <div className={styles.text}>
                         <div className={styles.subtitle}>
@@ -91,10 +91,10 @@ export default function Work() {
                         </div>
                     </div>
                     <div className={styles.image + ' ' + styles.seven}>
-                        <Image height={350} width={400} src={project3} alt="personal project 1" />
+                        <Image height={350} width={400} src={project3} priority={true} alt="personal project 1" />
                     </div>
                     <div className={styles.image}>
-                        <Image height={350} width={400} src={project4} alt="personal project 2" />
+                        <Image height={350} width={400} src={project4} priority={true} alt="personal project 2" />
                     </div>
                     <div className={styles.text}>
                         <div className={styles.subtitle}>
@@ -106,7 +106,7 @@ export default function Work() {
                         </div>
                         <div className={styles.textbox}>Tools and Technologies:</div>
                         <div className={styles.textbox}>
-                            JavaScript, CSS, React, Redux, Node.js, Express.js, MongoDB, Mongoose, JSON Web Tokens, Postman, Heroku
+                            JavaScript, CSS, React, Redux, Node.js, Express.js, MongoDB Atlas, AWS, Mongoose, JSON Web Tokens, Postman, Heroku
                         </div>
                         <div className={styles.link}>
                             <a className='button' href='https://mynoteboard.herokuapp.com/'>
