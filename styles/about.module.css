@@ -33,6 +33,7 @@
     font-size: 0.875rem;
     font-weight: normal;
     line-height: 1.25rem;
+    grid-column: 2;
 }
 
 .text {
@@ -93,7 +94,6 @@
         grid-column: 1;
     }
     .date {
-        grid-column: 2;
         text-align: right;
     }
     .text {

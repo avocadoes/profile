@@ -79,7 +79,7 @@ export default function Work() {
                         </div>
                         <div className={styles.textbox}>Tools and Technologies:</div>
                         <div className={styles.textbox}>
-                            JavaScript, CSS, React, Next.js, Vercel, Chrome DevTools, Figma, Material UI
+                            JavaScript, CSS, React, Next.js, EmailJS, Vercel, Chrome DevTools, Figma, Material UI
                         </div>
                         <div className={styles.link}>
                             <a className='button' href='https://www.figma.com/proto/0YLIwwourJrd0J31eOH5BY/Profile?node-id=304%3A80&starting-point-node-id=304%3A80&scaling=scale-down'>

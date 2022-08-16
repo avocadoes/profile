@@ -4,9 +4,9 @@ import SchoolIcon from '@mui/icons-material/School'
 import SettingsIcon from '@mui/icons-material/Settings'
 import WorkIcon from '@mui/icons-material/Work'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos'
+import PetsIcon from '@mui/icons-material/Pets'
 import Header from './components/header'
 import Footer from './components/footer'
-import Page from './components/page'
 import styles from '../styles/about.module.css'
 
 export default function About() {
@@ -59,6 +59,14 @@ export default function About() {
                             Over the course of my work term, I collaborated in a remote, agile team environment and contributed to all 
                             phases of the SDLC. I mainly worked on developing an existing web application, RAMP4, and planning/developing a new web application, TABS.
                         </div>
+                    </div>
+                    <div className={styles.subtitle}>
+                        <PetsIcon className={styles.icon} />&nbsp; VOLUNTEER WORK
+                    </div>
+                    <div className={styles.date}>09/2019 - present</div>
+                    <div className={styles.text}>
+                        <div className={styles.job}>Canine Enrichment Volunteer</div>
+                        <div className={styles.company}>TORONTO HUMANE SOCIETY</div>
                     </div>
                     <Link href='/work'>
                         <a className={'button ' + styles.button}><ArrowForwardIosIcon />&nbsp; Personal and Work Projects &nbsp;<ArrowForwardIosIcon /></a>

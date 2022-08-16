@@ -40,7 +40,7 @@ export default function Header() {
                     <a className={work}>PROJECTS</a>
                 </Link>
                 <Link href="/contact">
-                    <a className={contact}>SOCIALS</a>
+                    <a className={contact}>CONTACT</a>
                 </Link>
             </span>
             
