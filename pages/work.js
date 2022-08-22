@@ -33,7 +33,7 @@ export default function Work() {
                         <div className={styles.label}>ENVIRONMENT AND CLIMATE CHANGE CANADA</div>
                         <div className={styles.textbox}>08/2020 - 08/2021</div>
                         <div className={styles.textbox}>
-                            A Vue.js web mapping application that I worked on in a an agile team environment during my work term at ECCC. 
+                            A Vue.js web mapping application that I worked on in an agile team environment during my work term at Environment and Climate Change Canada. 
                         </div>
                         <div className={styles.textbox}>Tools and Technologies:</div>
                         <div className={styles.textbox}>
@@ -58,7 +58,7 @@ export default function Work() {
                         <div className={styles.textbox}>06/2021 - 08/2021</div>
                         <div className={styles.textbox}>
                             A Blazor project management web application that I worked on in the project{"'"}s front-end team during 
-                            my work term at ECCC.
+                            my work term at Environment and Climate Change Canada.
                         </div>
                         <div className={styles.textbox}>Tools and Technologies:</div>
                         <div className={styles.textbox}>
@@ -75,7 +75,7 @@ export default function Work() {
                         </div>
                         <div className={styles.textbox}>05/2022 - present</div>
                         <div className={styles.textbox}>
-                            A Next.js portfolio application I developed for displaying my qualifications on a web page. 
+                            A Next.js portfolio application I developed for displaying my information on a website. 
                         </div>
                         <div className={styles.textbox}>Tools and Technologies:</div>
                         <div className={styles.textbox}>
@@ -102,7 +102,7 @@ export default function Work() {
                         </div>
                         <div className={styles.textbox}>07/2022 - present</div>
                         <div className={styles.textbox}>
-                            A React.js notetaking application I developed to improve my experience with the MERN tech stack. 
+                            A React.js notetaking application I developed to improve my experience with user authentication and encryption. 
                         </div>
                         <div className={styles.textbox}>Tools and Technologies:</div>
                         <div className={styles.textbox}>
@@ -119,7 +119,7 @@ export default function Work() {
                     </div>
                     
                     <Link href='/contact'>
-                            <a className={'button ' + styles.button}><ArrowForwardIosIcon />&nbsp; Contact Information &nbsp;<ArrowForwardIosIcon /></a>
+                            <a className={'button ' + styles.button}><ArrowForwardIosIcon />&nbsp; Contact Me &nbsp;<ArrowForwardIosIcon /></a>
                     </Link>
                 </div>
             </main>

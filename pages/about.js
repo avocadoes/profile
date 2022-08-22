@@ -57,7 +57,7 @@ export default function About() {
                         <div className={styles.company}>ENVIRONMENT AND CLIMATE CHANGE CANADA</div>
                         <div>
                             Over the course of my work term, I collaborated in a remote, agile team environment and contributed to all 
-                            phases of the SDLC. I mainly worked on developing an existing web application, RAMP4, and planning/developing a new web application, TABS.
+                            phases of the SDLC. I mainly worked on progressing an existing web application, RAMP4, and planning/developing a new web application, TABS.
                         </div>
                     </div>
                     <div className={styles.subtitle}>
