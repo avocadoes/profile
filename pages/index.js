@@ -23,7 +23,7 @@ export default function Home() {
           <div className={styles.text}>
             <span className={styles.heading}>Hello</span>
             <div className={styles.textbox}>
-              Welcome to my online portfolio. I am a recent graduate and aspiring software developer.
+              Welcome to my online portfolio. I am a recent Computer Science graduate and aspiring software developer.
             </div>
             <Link href='/about'>
               <a className={styles.button + ' button'}><ArrowForwardIosIcon />&nbsp; About Me &nbsp;<ArrowForwardIosIcon /></a>

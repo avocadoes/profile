@@ -1,6 +1,6 @@
 .container {
     display: grid;
-    grid-template-columns: 3fr 1.5fr 6.5fr;
+    grid-template-columns: 3fr 2fr 8fr;
     max-width: 65rem;
     padding: 2rem 4rem 2rem 4rem;
     row-gap: 3rem;
@@ -19,6 +19,7 @@
 }
 
 .subtitle {
+    display: flex;
     font-size: 1.25rem;
     font-weight: bold;
     line-height: 1.75rem;
@@ -62,6 +63,12 @@
 
 .company {
     margin-bottom: 0.5rem;
+}
+
+.list {
+    list-style-type: circle;
+    margin: 0;
+    padding-left: 1rem;
 }
 
 .button {

@@ -30,39 +30,37 @@ export default function Work() {
                         <div className={styles.subtitle}>
                             <DevicesIcon className={styles.icon} />&nbsp; RAMP4
                         </div>
-                        <div className={styles.label}>ENVIRONMENT AND CLIMATE CHANGE CANADA</div>
-                        <div className={styles.textbox}>08/2020 - 08/2021</div>
+                        <div className={styles.label}>ENVIRONMENT AND CLIMATE CHANGE CANADA, 08/2020-08/2021</div>
                         <div className={styles.textbox}>
                             A Vue.js web mapping application that I worked on in an agile team environment during my work term at Environment and Climate Change Canada. 
                         </div>
                         <div className={styles.textbox}>Tools and Technologies:</div>
                         <div className={styles.textbox}>
-                            TypeScript, Vue,js, Vuex, HTML, SCSS, Tailwind CSS, AG Grid, Node.js, JSON, Markdown, shell scripts, 
-                            Chrome DevTools, Git, GitHub, MS Teams, Slack
+                            TypeScript, Vue,js, Vuex, VuePress, HTML, SCSS, Tailwind CSS, AG Grid, Node.js, JSON,
+                            Git, GitHub, GitHub Pages, Shell Scripts, Markdown, Chrome DevTools, MS Teams, Slack
                         </div>
                         <a className={'button ' + styles.link} href='https://github.com/ramp4-pcar4/ramp4-pcar4'>
                            public repository &nbsp; <OpenInNewIcon />
                         </a>
                     </div>
                     <div className={styles.image + ' ' + styles.two}>
-                        <Image height={350} width={400} src={project1} priority={true} alt="work project 1" />
+                        <Image height={350} width={400} src={project1} priority={true} alt="RAMP4 work project" />
                     </div>
                     <div className={styles.image}>
-                        <Image height={350} width={400} src={project2} priority={true} alt="work project 2" />
+                        <Image height={350} width={400} src={project2} priority={true} alt="TABS work project" />
                     </div>
                     <div className={styles.text}>
                         <div className={styles.subtitle}>
                             <DevicesIcon className={styles.icon} />&nbsp; TABS
                         </div>
-                        <div className={styles.label}>ENVIRONMENT AND CLIMATE CHANGE CANADA</div>
-                        <div className={styles.textbox}>06/2021 - 08/2021</div>
+                        <div className={styles.label}>ENVIRONMENT AND CLIMATE CHANGE CANADA, 06/2021-08/2021</div>
                         <div className={styles.textbox}>
                             A Blazor project management web application that I worked on in the project{"'"}s front-end team during 
                             my work term at Environment and Climate Change Canada.
                         </div>
                         <div className={styles.textbox}>Tools and Technologies:</div>
                         <div className={styles.textbox}>
-                            Figma, C#, Razor Pages, Blazor, MudBlazor, Git, Azure DevOps, Zoom, MS OneNote, MS Teams
+                            Figma, C#, Blazor, MudBlazor, Razor Pages, Git, Azure DevOps, MS OneNote, MS Teams
                         </div>
                         <div className={styles.disable + ' button ' + styles.link}>
                             private repository &nbsp; <OpenInNewOffIcon />
@@ -73,7 +71,7 @@ export default function Work() {
                         <div className={styles.subtitle}>
                             <DevicesIcon className={styles.icon} />&nbsp; Online Portfolio
                         </div>
-                        <div className={styles.textbox}>05/2022 - present</div>
+                        <div className={styles.label}>05/2022 - present</div>
                         <div className={styles.textbox}>
                             A Next.js portfolio application I developed for displaying my information on a website. 
                         </div>
@@ -100,13 +98,13 @@ export default function Work() {
                         <div className={styles.subtitle}>
                             <DevicesIcon className={styles.icon} />&nbsp; NoteBoard
                         </div>
-                        <div className={styles.textbox}>07/2022 - present</div>
+                        <div className={styles.label}>07/2022 - present</div>
                         <div className={styles.textbox}>
                             A React.js notetaking application I developed to improve my experience with user authentication and encryption. 
                         </div>
                         <div className={styles.textbox}>Tools and Technologies:</div>
                         <div className={styles.textbox}>
-                            JavaScript, CSS, React, Redux, Node.js, Express.js, MongoDB Atlas, AWS, Mongoose, JSON Web Tokens, Postman, Heroku
+                            JavaScript, CSS, React, Redux, Node.js, Express.js, MongoDB, Mongoose, JSON Web Tokens, Postman, Heroku
                         </div>
                         <div className={styles.link}>
                             <a className='button' href='https://mynoteboard.herokuapp.com/'>
