@@ -7,7 +7,7 @@ import OpenInNewOffIcon from '@mui/icons-material/OpenInNewOff';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import Header from './components/header'
 import Footer from './components/footer'
-import styles from '../styles/work.module.css'
+import styles from '../styles/work.module.scss'
 import project1 from '../public/map.png'
 import project2 from '../public/dashboard.png'
 import project3 from '../public/profile.png'
@@ -117,7 +117,7 @@ export default function Work() {
                     </div>
                     
                     <Link href='/contact'>
-                            <a className={'button ' + styles.button}><ArrowForwardIosIcon />&nbsp; Contact Me &nbsp;<ArrowForwardIosIcon /></a>
+                            <a className={'button ' + styles.button}>Contact Me &nbsp;<ArrowForwardIosIcon /></a>
                     </Link>
                 </div>
             </main>

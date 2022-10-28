@@ -7,7 +7,7 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos'
 import PetsIcon from '@mui/icons-material/Pets'
 import Header from './components/header'
 import Footer from './components/footer'
-import styles from '../styles/about.module.css'
+import styles from '../styles/about.module.scss'
 
 export default function About() {
     const skills = 
@@ -114,7 +114,7 @@ export default function About() {
                         <div className={styles.company}>TORONTO HUMANE SOCIETY</div>
                     </div>
                     <Link href='/work'>
-                        <a className={'button ' + styles.button}><ArrowForwardIosIcon />&nbsp; Personal and Work Projects &nbsp;<ArrowForwardIosIcon /></a>
+                        <a className={'button ' + styles.button}>Personal and Work Projects &nbsp;<ArrowForwardIosIcon /></a>
                     </Link>
                 </div>
             </main>

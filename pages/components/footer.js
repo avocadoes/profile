@@ -1,7 +1,7 @@
 import EmailIcon from '@mui/icons-material/Email';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import styles from '../../styles/footer.module.css';
+import styles from '../../styles/footer.module.scss';
 
 export default function Footer() {
     // 'inline-flex w-full border-t-1 border-solid border-gray-300 py-7 justify-center mt-2'

@@ -1,0 +1,112 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 65rem;
+    padding: 2rem 4rem 2rem 4rem;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.title {
+    grid-column: 1/3;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 5rem;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    font-weight: bold;
+    line-height: 1.75rem;
+    text-align: center;
+}
+
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.5rem double;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+}
+
+.textbox {
+    margin-top: 1rem;
+}
+
+.label {
+    font-size: smaller;
+    text-align: center;
+}
+
+.link {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.icon {
+    height: 2rem;
+    width: 2rem;
+}
+
+.button {
+    grid-column: 1/3;
+    justify-self: flex-end;
+    margin-bottom: 2rem;
+}
+
+.disable {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+@media (prefers-color-scheme: light) {
+    .container, .container *{
+        background: #F3E9D6;
+    }
+    .button, .button * {
+        background: #fefaf0;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .container, .container * {
+        background: #152519;
+    }
+    .button, .button * {
+        background: #2E3B31;
+    }
+}
+
+@media (max-width: 52rem) {
+    .container {
+        grid-template-columns: 1fr;
+        column-gap: 0;
+    }
+    .text {
+        grid-column: 1;
+    }
+    .image {
+        grid-column: 1;
+    }
+    .two {
+        grid-row: 2;
+    }
+    .seven {
+        grid-row: 7;
+    }  
+}

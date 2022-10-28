@@ -1,0 +1,121 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    column-gap: 4rem;
+    max-width: fit-content;
+    padding: 4rem 10rem 10rem 10rem;
+    align-items: start;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.title {
+    grid-column: 1;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 4.5rem;
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+}
+
+.link {
+    grid-column: 1;
+    display: flex;
+    align-items: center;
+    align-text: center;
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding-bottom: 2rem;
+}
+
+.label {
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    grid-column: 2;
+    grid-row: 1/3;
+    align-items: flex-start;
+    justify-self: right;
+    width: 100%;
+    margin-top: 4.5rem;
+    font-size: 1rem;
+}
+
+.form input,
+.form textarea {
+    width: 100%;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+
+.form button {
+    width: 100%;
+    margin-top: 4px;
+}
+
+@media (prefers-color-scheme: light) {
+    .container, .container * {
+        background: #F3E9D6;
+    }
+    .link:hover * {
+        color: #00761e;
+    }
+    .form input,
+    .form textarea,
+    .form button {
+        background: #fffaf0;
+    }
+    .form input::placeholder, .form textarea::placeholder {
+        color: #717171;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .container, .container * {
+        background: #152519;
+    }
+    .link:hover * {
+        color: #eed29e;
+    }
+    .form input,
+    .form textarea,
+    .form button {
+        background: #2E3B31;
+    }
+    .form input::placeholder, .form textarea::placeholder {
+        color: white;
+    }
+}
+
+@media (max-width: 59rem) {
+    .container {
+        grid-template-columns: 1fr;
+        padding: 1rem 8rem 1rem 8rem;
+    }
+    .title {
+        margin-bottom: 0;
+    }
+    .form {
+        grid-column: 1;
+        grid-row: 2;
+        margin-bottom: 1rem;
+    }
+    .socials {
+        flex-direction: row;
+        padding: 4rem;
+    }
+    .link {
+        grid-column: 1;
+        flex-direction: column;
+    }
+}
