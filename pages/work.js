@@ -1,20 +1,27 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
-import DevicesIcon from '@mui/icons-material/Devices';
-import OpenInNewIcon from '@mui/icons-material/OpenInNew';
-import OpenInNewOffIcon from '@mui/icons-material/OpenInNewOff';
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import DevicesIcon from '@mui/icons-material/Devices'
+import OpenInNewIcon from '@mui/icons-material/OpenInNew'
+import OpenInNewOffIcon from '@mui/icons-material/OpenInNewOff'
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos'
 import Header from './components/header'
 import Footer from './components/footer'
 import styles from '../styles/work.module.scss'
-import project1 from '../public/map.png'
-import project2 from '../public/dashboard.png'
-import project3 from '../public/profile.png'
-import project4 from '../public/noteboard.png'
+
+
+import project3 from '../public/projects/profile.png'
+import project4 from '../public/projects/noteboard.png'
+import cryptoDesktop from '../public/projects/cDesktop.png'
+import cryptoMobile from '../public/projects/cMobile.png'
+import pokeSearch from '../public/projects/poke.png'
+import profileLight from '../public/projects/pLight.png'
+import profileDark from '../public/projects/pDark.png'
+import noteboard from '../public/projects/note.png'
+import ramp4 from '../public/projects/map.png'
+import tabs from '../public/projects/dashboard.png'
 
 export default function Work() {
-    // TODO: add details dropdown for each project
     return (
         <div>
             <Head>
@@ -25,8 +32,88 @@ export default function Work() {
                 <Header></Header>
 
                 <div className={styles.container}>
-                    <div className={styles.title}>WORK PROJECTS</div>
-                    <div className={styles.text}>
+                    <div className={styles.title}>GALLERY</div>
+                    <div className={styles.img + ' ' + styles.light}>
+                        <Image 
+                            src={profileLight} 
+                            alt='portfolio homepage in light theme'
+                            layout='fill'
+                        />
+                        <div className={styles.darken} />
+                        <div className={styles.label}>
+                            <div>Personal Project: Online Portfolio</div>
+                        </div>
+                    </div>
+                    <div className={styles.img + ' ' + styles.dark}>
+                        <Image 
+                            src={profileDark} 
+                            alt='portfolio homepage in dark theme'
+                            layout='fill'
+                        />
+                        <div className={styles.darken} />
+                        <div className={styles.label}>
+                            <div>Personal Project: Online Portfolio</div>
+                        </div>
+                    </div>
+                    <div className={styles.img}>
+                        <Image 
+                            src={tabs} 
+                            alt='tabs user dashboard'
+                            layout='fill'
+                        />
+                        <div className={styles.darken} />
+                        <div className={styles.label}>
+                            <div>Work Project: TABS</div>
+                        </div>
+                    </div>
+                    <div className={styles.img}>
+                        <Image 
+                            src={ramp4} 
+                            alt='ramp4 main page'
+                            layout='fill' 
+                        />
+                        <div className={styles.darken} />
+                        <div className={styles.label}>
+                            <div>Work Project: RAMP4</div>
+                        </div>
+                    </div>
+                    <div className={styles.img}>
+                        <Image 
+                            src={noteboard} 
+                            alt='noteboard login page' 
+                            layout='fill'
+                        />
+                        <div className={styles.darken} />
+                        <div className={styles.label}>
+                            <div>Personal Project: NoteBoard</div>
+                        </div>
+                    </div>
+                    <div className={styles.img}>
+                        <Image 
+                            src={cryptoDesktop} 
+                            alt='cryptocurrency user dashboard desktop layout' 
+                            layout='fill'
+                        />
+                        <div className={styles.darken} />
+                        <div className={styles.label}>
+                            <div>Personal Project:</div>
+                            <div>Cryptocurrency Dashboard</div>
+                        </div>
+                    </div>
+                    <div className={styles.img}>
+                        <Image 
+                            src={pokeSearch} 
+                            alt='pokeSearch main page'
+                            layout='fill'
+                        />
+                        <div className={styles.darken} />
+                        <div className={styles.label}>
+                            <div>Personal Project: PokeSearch</div>
+                        </div>
+                    </div>
+                    
+
+                    {/*<div className={styles.text}>
                         <div className={styles.subtitle}>
                             <DevicesIcon className={styles.icon} />&nbsp; RAMP4
                         </div>
@@ -114,7 +201,7 @@ export default function Work() {
                                 public repository &nbsp; <OpenInNewIcon />
                             </a>
                         </div>
-                    </div>
+    </div>*/}
                     
                     <Link href='/contact'>
                             <a className={'button ' + styles.button}>Contact Me &nbsp;<ArrowForwardIosIcon /></a>

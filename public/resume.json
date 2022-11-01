@@ -1,0 +1,97 @@
+{
+    "Introduction": "(introduction)",
+    "Education": {
+        "date": "09/2017 - 06/2022",
+        "location": "University of Toronto",
+        "description": "Honours Bachelor of Science specializing in Computer Science"
+    },
+    "Skills": {
+            "Languages": ["HTML", "CSS", "SASS/SCSS", "JavaScript", "TypeScript", "C#", "C", "Python", "Java", "SQL"],
+            "Web Development": ["React", "Redux", "Next.js", "Vue.js", "Vuex", "Blazor", "Tailwind CSS", "Node.js", "Express.js", "MongoDB", "Mongoose"],
+            "Web Design": ["Figma", "Usability Tests", "Typography", "Color Theory"],
+            "Deployment": ["GitHub Pages", "Heroku", "Vercel", "Shell Scripts"],
+            "Testing": ["Mocha.js", "Postman", "GNU Debugger", "Chrome/Redux DevTools"],
+            "Collaboration": ["Git", "GitHub", "Azure DevOps", "MS Teams", "Zoom", "Slack"],
+            "Concepts": ["HTTP Methods", "REST APIs", "Agile Methodologies", "Git Workflows", "SDLC", "MVC"]
+    },
+    "Work Experience": {
+        "date": "08/2020-08/2021",
+        "role": "Web Application Developer",
+        "location": "Environment and Climate Change Canada",
+        "description": "Over the course of my work term, I collaborated in a remote, agile team environment and contributed to all phases of the SDLC. I mainly worked on progressing an existing web application, RAMP4, and planning/developing a new web application, TABS.",
+        "projects": [
+            {
+                "name": "RAMP4",
+                "location": "Environment and Climate Change Canada",
+                "description": "A Vue.js web mapping application",
+                "contributions": [
+                    "Created and updated the appearance and functionality of UI components following WCAG (Web Content Accessibility Guidelines).",
+                    "Created and deployed a static documentation site using VuePress and GitHub Pages.",
+                    "Created and updated features of existing APIs such as the LegendAPI and InstanceAPI.",
+                    "Tested and evaluated the pull requests of other contributors."
+                ],
+                "links": {
+                    "app": "https://ramp4-pcar4.github.io/ramp4-pcar4/main/",
+                    "repo": "https://github.com/ramp4-pcar4/ramp4-pcar4"
+                }
+            },
+            {
+                "name": "TABS",
+                "location": "Environment and Climate Change Canada",
+                "description": "A Blazor project management application",
+                "contributions": [
+                    "Evaluated the project goals, audience, scope, purpose, and timeline.", 
+                    "Defined the app content, functional requirements, and tool stack.",
+                    "Designed the UI and created a high-fidelity prototype using Figma and feedback from clients.",
+                    "Implemented the design using Blazor."
+                ]
+            }
+        ]
+    },
+    "Personal Projects": [
+        {
+            "date": "09/2022 - 10/2022",
+            "name": "PokeFinder",
+            "description": "A React.js web application using read-only data from PokeAPI.",
+            "links": {
+                "design": "https://www.figma.com/file/R0zZ96Aeg1jACaAlDONpov/pokeapi?node-id=0%3A1",
+                "app": "https://avocadoes.github.io/pokesearch/",
+                "repo": "https://github.com/avocadoes/pokesearch"
+            }
+        },
+        {
+            "date": "09/2022 - 10/2022",
+            "name": "CryptoTracker",
+            "description": "A high-fidelity Figma prototype.",
+            "links": {
+                "design": "https://www.figma.com/file/Xz6hnU6QNV2Wnc1V42Xidm/Cryptocurrency-Dashboard?node-id=11%3A84",
+                "desktop": "https://www.figma.com/proto/Xz6hnU6QNV2Wnc1V42Xidm/Cryptocurrency-Dashboard?node-id=28%3A149&scaling=scale-down&page-id=11%3A84&starting-point-node-id=28%3A149",
+                "mobile": "https://www.figma.com/proto/Xz6hnU6QNV2Wnc1V42Xidm/Cryptocurrency-Dashboard?node-id=11%3A96&scaling=scale-down&page-id=11%3A84&starting-point-node-id=28%3A149"
+            }
+        },
+        {
+            "date": "07/2022 - 08/2022",
+            "name": "NoteBoard",
+            "description": "A MERN web application (MongoDB, Express.js, React.js, Node.js).",
+            "links": {
+                "app": "https://mynoteboard.herokuapp.com/login",
+                "repo": "https://github.com/avocadoes/noteboard"
+            }
+        },
+        {
+            "date": "05/2022 - present",
+            "name": "Portfolio",
+            "description": "A Next.js web application.",
+            "links": {
+                "design": "https://www.figma.com/file/0YLIwwourJrd0J31eOH5BY/Profile?node-id=109%3A8",
+                "app": "https://profile-avocadoes.vercel.app/",
+                "repo": "https://github.com/avocadoes/profile"
+            }
+        }
+    ],
+    "Volunteer History": {
+        "date": "09/2019 - present",
+        "role": "Canine Enrichment Volunteer",
+        "location": "Toronto Humane Society"
+    }
+}

@@ -1,56 +1,28 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import Link from 'next/link'
 import SchoolIcon from '@mui/icons-material/School'
 import SettingsIcon from '@mui/icons-material/Settings'
 import WorkIcon from '@mui/icons-material/Work'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos'
 import PetsIcon from '@mui/icons-material/Pets'
+import DevicesIcon from '@mui/icons-material/Devices'
+import OpenInNewIcon from '@mui/icons-material/OpenInNew'
+import OpenInNewOffIcon from '@mui/icons-material/OpenInNewOff'
 import Header from './components/header'
 import Footer from './components/footer'
+import pic from '../public/cropped.png'
+import data from '../public/resume.json'
 import styles from '../styles/about.module.scss'
 
 export default function About() {
-    const skills = 
-    [
-        "Languages",
-        "Front-end",
-        "Back-end",
-        "Deployment",
-        "Testing",
-        "Collaboration",
-        "Concepts"
-    ]
-    const skillLabel = skills.map((skill, index) => <div key={index}>{skill}</div>)
-
-    const descriptions = 
-    [
-        "HTML, CSS, SCSS, SASS, JavaScript, TypeScript, C#, C, Python, Java, SQL",
-        "React, Redux, Next.js, Vue.js, Vuex, Blazor, MudBlazor, Tailwind CSS",
-        "Node.js, Express.js, MongoDB, Mongoose",
-        "GitHub Pages, Heroku, Vercel, Shell Scripting",
-        "Mocha.js, Postman, GNU Debugger, Chrome and Redux DevTools",
-        "Git, GitHub, Azure DevOps, Figma, MS Teams, Zoom, Slack",
-        "HTTP Methods, REST APIs, Agile Methodologies, Git Workflows, SDLC, MVC"
-    ];
-    const skillDesc = descriptions.map((desc, index) => <div key={index}>{desc}</div>)
-
-    const tasksRAMP4 =
-    [
-        "Created and updated the appearance and functionality of UI components following WCAG (Web Content Accessibility Guidelines).",
-        "Created and deployed a static documentation site using VuePress and GitHub Pages.",
-        "Created and updated features of existing APIs such as the LegendAPI and InstanceAPI.",
-        "Tested and evaluated the pull requests of other contributors."
-    ]
-    const projectRAMP4 = tasksRAMP4.map((task, index) => <li key={index}>{task}</li>)
-
-    const tasksTABS = 
-    [
-        "Evaluated the project goals, audience, scope, purpose, and timeline.",
-        "Defined the app content, functional requirements, and tool stack.",
-        "Designed the UI and created a high-fidelity prototype using Figma and feedback from clients.",
-        "Implemented the design using Blazor."
-    ]
-    const projectTABS = tasksTABS.map((task, index) => <li key={index}>{task}</li>)
+    const intro = data["Introduction"]
+    const education = data["Education"]
+    const skills = Object.keys(data.Skills)
+    const skillDesc = Object.values(data.Skills)
+    const workExp = data["Work Experience"]
+    const projects = data["Personal Projects"]
+    const volunteer = data["Volunteer History"]
 
     return (
         <div>
@@ -59,66 +31,133 @@ export default function About() {
             </Head>
 
             <main>
-                <Header></Header>
+                <Header />
                 <div className={styles.container}>
+                    <div  className={styles.frame}>
+                        <Image className={styles.image} height={200} width={200} src={pic} priority={true} alt="profile picture" />
+                    </div>
                     <div className={styles.title}>ABOUT ME</div>
-                    <div className={styles.subtitle}>
-                        <SchoolIcon className='icon' />&nbsp; EDUCATION
-                    </div>
-                    <div className={styles.date}>09/2017 - 06/2022</div>
-                    <div className={styles.text}>
-                        <div className={styles.label}>University of Toronto</div>                       
-                        <div>Honours Bachelor of Science specializing in Computer Science</div>
-                    </div>
-                    <div className={styles.subtitle}>
-                        <SettingsIcon className='icon' />&nbsp; SKILLS
-                    </div>
-                    <div className={styles.label}>
-                        {skillLabel}
-                    </div>
-                    <div className={styles.text + ' ' + styles.two}>
-                        {skillDesc}
-                    </div>
-                    <div className={styles.subtitle}>
-                        <WorkIcon className={styles.icon} />&nbsp; <div>WORK <br /> EXPERIENCE</div>
-                    </div>
-                    <div className={styles.date}>08/2020 - 08/2021</div>
-                    <div className={styles.text}>
-                        <div className={styles.job}>Web Application Developer</div>
-                        <div className={styles.company}>ENVIRONMENT AND CLIMATE CHANGE CANADA</div>
-                        <div>
-                            Over the course of my work term, I collaborated in a remote, agile team environment and contributed to all 
-                            phases of the SDLC. I mainly worked on progressing an existing web application, RAMP4, and planning/developing a new web application, TABS.
+                    {/*<div className={styles.intro}>{intro}</div>*/}
+
+                    <div className={styles.data}>
+                        <div className={styles.subtitle}>
+                            <SchoolIcon />&nbsp; EDUCATION
                         </div>
-                        <br />
-                        <div className={styles.job}>Work Project: RAMP4</div>
-                        <div className={styles.company}>ENVIRONMENT AND CLIMATE CHANGE CANADA</div>
+                        <div className={styles.date}>{education.date}</div>
                         <div>
-                            A Vue.js web mapping application.
+                            <div className={styles.label}>{education.location}</div>                       
+                            <div>{education.description}</div>
                         </div>
-                        <ul className={styles.list}>{ projectRAMP4 }</ul>
-                        <br />
-                        <div className={styles.job}>Work Project: TABS</div>
-                        <div className={styles.company}>ENVIRONMENT AND CLIMATE CHANGE CANADA</div>
+                        <div className={styles.subtitle}>
+                            <SettingsIcon />&nbsp; SKILLS
+                        </div>
+                        <div className={styles.table}>
+                            {skills.map((skill, index) => <div className={styles.label} key={index}>{skill}</div>)}
+                            {skillDesc.map((skill, index) => <div key={index}>{skill.join(", ")}</div>)}
+                        </div>
+                        
+                        <div className={styles.subtitle}>
+                            <WorkIcon />&nbsp; <span>WORK EXPERIENCE</span>
+                        </div>
+                        <div className={styles.date}>{workExp.date}</div>
                         <div>
-                            A Blazor project management application.
+                            <div className={styles.subject}>{workExp.role}</div>
+                            <div className={styles.company}>{workExp.location.toUpperCase()}</div>
+                            <div>{workExp.description}</div>
+                            <br />
+                            <div className={styles.subject}>Work Project: {workExp.projects[0].name}</div>
+                            <div className={styles.company}>{workExp.projects[0].location.toUpperCase()}</div>
+                            <div>
+                                {workExp.projects[0].description}
+                            </div>
+                            <ul className={styles.list}>{ workExp.projects[0].contributions.map((item, index) => <li key={index}>{item}</li>) }</ul>
+                            <div className={styles.links}>
+                                <a className={'button ' + styles.link} href={workExp.projects[0].links.app}>
+                                    <OpenInNewIcon /> &nbsp;
+                                    Public Application
+                                </a>
+                                <a className={'button ' + styles.link} href={workExp.projects[0].links.repo}>
+                                    <OpenInNewIcon /> &nbsp;
+                                    Public Repository
+                                </a>
+                            </div>
+                            <br />
+                            <div className={styles.subject}>Work Project: {workExp.projects[1].name}</div>
+                            <div className={styles.company}>{workExp.projects[1].location.toUpperCase()}</div>
+                            <div>
+                                {workExp.projects[1].description}
+                            </div>
+                            <ul className={styles.list}>{ workExp.projects[1].contributions.map((item, index) => <li key={index}>{item}</li>) }</ul>
+                            <div className={styles.links}>
+                                <a className={styles.disable + ' button ' + styles.link}>
+                                    <OpenInNewOffIcon /> &nbsp;
+                                    Private Application
+                                </a>
+                                <a className={styles.disable + ' button ' + styles.link}>
+                                    <OpenInNewOffIcon /> &nbsp;
+                                    Private Repository
+                                </a>
+                            </div>
                         </div>
-                        <ul className={styles.list}>{ projectTABS }</ul>
+                        <div className={styles.subtitle}>
+                            <WorkIcon className={styles.icon} />&nbsp; <span>PERSONAL PROJECTS</span>
+                        </div>
+                        <div className={styles.table}>
+                            {projects.map((project, index) => (
+                                <div className={styles.date + ' ' + styles.nest} key={index}>{project.date}</div>
+                            ))}
+                            {projects.map((project, index) => (
+                                <div key={index}>
+                                    <div className={styles.subject}>{project.name}</div>
+                                    <div>{project.description}</div>
+                                    <div className={styles.links}>
+                                        {(project.links.design && (
+                                            <a className={'button ' + styles.link} href={project.links.design}>
+                                                <OpenInNewIcon /> &nbsp;
+                                                Design File
+                                            </a>
+                                        ))}
+                                        {(project.links.desktop && (
+                                            <a className={'button ' + styles.link} href={project.links.desktop}>
+                                                <OpenInNewIcon /> &nbsp;
+                                                Desktop Prototype</a>
+                                        ))}
+                                        {(project.links.mobile && (
+                                            <a className={'button ' + styles.link} href={project.links.mobile}>
+                                                <OpenInNewIcon /> &nbsp;
+                                                Mobile Prototype</a>
+                                        ))}
+                                        {(project.links.app && (
+                                            <a className={'button ' + styles.link} href={project.links.app}>
+                                                <OpenInNewIcon /> &nbsp;
+                                                Application
+                                            </a>
+                                        ))}
+                                        {(project.links.repo && (
+                                            <a className={'button ' + styles.link} href={project.links.repo}>
+                                                <OpenInNewIcon /> &nbsp;
+                                                Repository
+                                            </a>
+                                        ))}
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                        <div className={styles.subtitle}>
+                            <PetsIcon className={styles.icon} />&nbsp; <span>VOLUNTEER HISTORY</span>
+                        </div>
+                        <div className={styles.date}>{volunteer.date}</div>
+                        <div>
+                            <div className={styles.subject}>{volunteer.role}</div>
+                            <div className={styles.company}>{volunteer.location.toUpperCase()}</div>
+                        </div>
+                        <Link href='/work'>
+                            <a className={'button ' + styles.button}>Gallery &nbsp;<ArrowForwardIosIcon /></a>
+                        </Link>
                     </div>
-                    <div className={styles.subtitle}>
-                        <PetsIcon className={styles.icon} />&nbsp; <div>VOLUNTEER <br /> HISTORY</div>
-                    </div>
-                    <div className={styles.date}>09/2019 - present</div>
-                    <div className={styles.text}>
-                        <div className={styles.job}>Canine Enrichment Volunteer</div>
-                        <div className={styles.company}>TORONTO HUMANE SOCIETY</div>
-                    </div>
-                    <Link href='/work'>
-                        <a className={'button ' + styles.button}>Personal and Work Projects &nbsp;<ArrowForwardIosIcon /></a>
-                    </Link>
                 </div>
             </main>
-            <Footer></Footer>
+            <Footer />
         </div>
     )
 }
