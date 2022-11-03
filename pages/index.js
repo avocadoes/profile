@@ -52,7 +52,7 @@ export default function Home() {
                 Gallery
               </div>
               <div className={styles.desc}>
-              View a visual summary of my past projects.
+              View a visual summary of my recent projects.
             </div>
             </a>
           </Link>

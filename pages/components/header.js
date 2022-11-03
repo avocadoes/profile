@@ -29,7 +29,7 @@ export default function Header() {
                     <a className={about}>ABOUT</a>
                 </Link>
                 <Link href="/work">
-                    <a className={work}>PROJECTS</a>
+                    <a className={work}>GALLERY</a>
                 </Link>
                 <Link href="/contact">
                     <a className={contact}>CONTACT</a>

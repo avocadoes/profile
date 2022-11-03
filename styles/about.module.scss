@@ -65,6 +65,7 @@
 .date {
     font-size: 0.875rem;
     font-weight: normal;
+    margin-top: 0.125rem;
 }
 
 .nest {
@@ -81,7 +82,7 @@
 
 .list {
     list-style-type: circle;
-    margin: 0;
+    margin: 0.5rem;
     padding-left: 1rem;
 }
 
@@ -165,5 +166,14 @@
     }
     .two {
         grid-column: 2;
+    }
+}
+
+@media (max-width: 35rem) {
+    .links {
+        flex-direction: column;
+        a {
+            width: 90%;
+        }
     }
 }

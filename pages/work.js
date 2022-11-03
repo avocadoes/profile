@@ -29,7 +29,7 @@ export default function Work() {
             </Head>
 
             <main>
-                <Header></Header>
+                <Header />
 
                 <div className={styles.container}>
                     <div className={styles.title}>GALLERY</div>
@@ -208,7 +208,7 @@ export default function Work() {
                     </Link>
                 </div>
             </main>
-            <Footer></Footer>
+            <Footer />
         </div>
     )
 }

@@ -71,6 +71,10 @@ export default function About() {
                                 {workExp.projects[0].description}
                             </div>
                             <ul className={styles.list}>{ workExp.projects[0].contributions.map((item, index) => <li key={index}>{item}</li>) }</ul>
+                            <div>Tools and technologies used:</div>
+                            <ul className={styles.list}>
+                                <li>{workExp.projects[0].tools.join(', ')}</li>
+                            </ul>
                             <div className={styles.links}>
                                 <a className={'button ' + styles.link} href={workExp.projects[0].links.app}>
                                     <OpenInNewIcon /> &nbsp;
@@ -87,7 +91,13 @@ export default function About() {
                             <div>
                                 {workExp.projects[1].description}
                             </div>
-                            <ul className={styles.list}>{ workExp.projects[1].contributions.map((item, index) => <li key={index}>{item}</li>) }</ul>
+                            <ul className={styles.list}>
+                                { workExp.projects[1].contributions.map((item, index) => <li key={index}>{item}</li>) }
+                            </ul>
+                            <div>Tools and technologies used:</div>
+                            <ul className={styles.list}>
+                                <li>{workExp.projects[1].tools.join(', ')}</li>
+                            </ul>
                             <div className={styles.links}>
                                 <a className={styles.disable + ' button ' + styles.link}>
                                     <OpenInNewOffIcon /> &nbsp;
@@ -110,6 +120,13 @@ export default function About() {
                                 <div key={index}>
                                     <div className={styles.subject}>{project.name}</div>
                                     <div>{project.description}</div>
+                                    <ul className={styles.list}>
+                                        { project.features.map((item, index) => <li key={index}>{item}</li>) }
+                                    </ul>
+                                    <div>Tools and technologies used:</div>
+                                    <ul className={styles.list}>
+                                        <li>{project.tools.join(', ')}</li>
+                                    </ul>
                                     <div className={styles.links}>
                                         {(project.links.design && (
                                             <a className={'button ' + styles.link} href={project.links.design}>

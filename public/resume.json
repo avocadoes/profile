@@ -8,11 +8,11 @@
     "Skills": {
             "Languages": ["HTML", "CSS", "SASS/SCSS", "JavaScript", "TypeScript", "C#", "C", "Python", "Java", "SQL"],
             "Web Development": ["React", "Redux", "Next.js", "Vue.js", "Vuex", "Blazor", "Tailwind CSS", "Node.js", "Express.js", "MongoDB", "Mongoose"],
-            "Web Design": ["Figma", "Usability Tests", "Typography", "Color Theory"],
+            "Web Design": ["Figma", "Adobe Photoshop", "Adobe Illustrator", "Lucidchart", "Usability Tests", "Typography", "Color Theory"],
             "Deployment": ["GitHub Pages", "Heroku", "Vercel", "Shell Scripts"],
             "Testing": ["Mocha.js", "Postman", "GNU Debugger", "Chrome/Redux DevTools"],
             "Collaboration": ["Git", "GitHub", "Azure DevOps", "MS Teams", "Zoom", "Slack"],
-            "Concepts": ["HTTP Methods", "REST APIs", "Agile Methodologies", "Git Workflows", "SDLC", "MVC"]
+            "Concepts": ["Agile Methodologies", "HTTP Methods", "REST APIs",  "Git Workflows", "SDLC", "MVC"]
     },
     "Work Experience": {
         "date": "08/2020-08/2021",
@@ -23,12 +23,16 @@
             {
                 "name": "RAMP4",
                 "location": "Environment and Climate Change Canada",
-                "description": "A Vue.js web mapping application",
+                "description": "A Vue.js web mapping application.",
                 "contributions": [
                     "Created and updated the appearance and functionality of UI components following WCAG (Web Content Accessibility Guidelines).",
                     "Created and deployed a static documentation site using VuePress and GitHub Pages.",
                     "Created and updated features of existing APIs such as the LegendAPI and InstanceAPI.",
                     "Tested and evaluated the pull requests of other contributors."
+                ],
+                "tools": [
+                    "HTML", "SCSS", "TypeScript", "Vue.js", "Vuex", "Vuepress", "Tailwid CSS", "Ag Grid", "Node.js", "JSON",
+                    "Git", "GitHub", "Shell Scripts", "Markdown", "Chrome DevTools", "MS Teams", "Slack"
                 ],
                 "links": {
                     "app": "https://ramp4-pcar4.github.io/ramp4-pcar4/main/",
@@ -38,12 +42,15 @@
             {
                 "name": "TABS",
                 "location": "Environment and Climate Change Canada",
-                "description": "A Blazor project management application",
+                "description": "A Blazor project management application.",
                 "contributions": [
                     "Evaluated the project goals, audience, scope, purpose, and timeline.", 
                     "Defined the app content, functional requirements, and tool stack.",
                     "Designed the UI and created a high-fidelity prototype using Figma and feedback from clients.",
                     "Implemented the design using Blazor."
+                ],
+                "tools": [
+                    "Figma", "C#", "Blazor", "MudBlazor", "Razor Pages", "Git", "Azure DevOps", "MS OneNote", "MS Teams"
                 ]
             }
         ]
@@ -52,7 +59,14 @@
         {
             "date": "09/2022 - 10/2022",
             "name": "PokeFinder",
-            "description": "A React.js web application using read-only data from PokeAPI.",
+            "description": "A web application that finds and displays data from user input using read-only data from PokeAPI.",
+            "features": [
+                "Fetches and displays images, data tables, and graphs of a specified pokemon.",
+                "Users can save a list of pokemon for easy data access."
+            ],
+            "tools": [
+                "JavaScript", "CSS", "SCSS", "React", "GitHub Pages", "PokeAPI", "Figma", "Lucidchart"
+            ],
             "links": {
                 "design": "https://www.figma.com/file/R0zZ96Aeg1jACaAlDONpov/pokeapi?node-id=0%3A1",
                 "app": "https://avocadoes.github.io/pokesearch/",
@@ -62,7 +76,14 @@
         {
             "date": "09/2022 - 10/2022",
             "name": "CryptoTracker",
-            "description": "A high-fidelity Figma prototype.",
+            "description": "A high-fidelity Figma prototype of the dashboard for a cryptocurrency web application.",
+            "features": [
+                "Design prioritizes user experience, personalization, and accessibility.",
+                "Interactive desktop and mobile prototypes for usability testing."
+            ],
+            "tools": [
+                "Figma"
+            ],
             "links": {
                 "design": "https://www.figma.com/file/Xz6hnU6QNV2Wnc1V42Xidm/Cryptocurrency-Dashboard?node-id=11%3A84",
                 "desktop": "https://www.figma.com/proto/Xz6hnU6QNV2Wnc1V42Xidm/Cryptocurrency-Dashboard?node-id=28%3A149&scaling=scale-down&page-id=11%3A84&starting-point-node-id=28%3A149",
@@ -72,7 +93,15 @@
         {
             "date": "07/2022 - 08/2022",
             "name": "NoteBoard",
-            "description": "A MERN web application (MongoDB, Express.js, React.js, Node.js).",
+            "description": "A note-taking web application that creates/reads/updates/deletes a user's notes on a cloud server.",
+            "features": [
+                "User authentication and password encryption.",
+                "Page designs are responsive to screen size and OS preferences of dark or light mode."
+            ],
+            "tools": [
+                "JavaScript", "CSS", "React", "Redux", "Redux DevTools", "Node.js", "Express.js", 
+                "MongoDB", "Mongoose", "JSON Web Tokens", "Postman", "Heroku"
+            ],
             "links": {
                 "app": "https://mynoteboard.herokuapp.com/login",
                 "repo": "https://github.com/avocadoes/noteboard"
@@ -81,7 +110,15 @@
         {
             "date": "05/2022 - present",
             "name": "Portfolio",
-            "description": "A Next.js web application.",
+            "description": "A web application that displays static information about my experience.",
+            "features": [
+                "Page designs are responsive to screen size and OS preferences of dark or light mode.",
+                "Users can send a message to my email through the form on the 'Contact' page."
+            ],
+            "tools": [
+                "JavaScript", "CSS", "SCSS", "JSON", "React", "Next.js", "EmailJS", "Vercel", 
+                "Chrome DevTools", "Figma", "Adobe Photoshop", "Material UI"
+            ],
             "links": {
                 "design": "https://www.figma.com/file/0YLIwwourJrd0J31eOH5BY/Profile?node-id=109%3A8",
                 "app": "https://profile-avocadoes.vercel.app/",

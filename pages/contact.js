@@ -9,7 +9,6 @@ import styles from '../styles/contact.module.scss'
 import emailjs from '@emailjs/browser'
 
 export default function Contact() {
-    // todo: add toast notif to submit
     const form = useRef()
     const sendEmail = (e) => {
         e.preventDefault()
