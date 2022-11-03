@@ -158,10 +158,11 @@
     .image {
         grid-column: 1;
     }
-    .two {
-        grid-row: 2;
+}
+
+@media (max-width: 32rem) {
+    .img {
+        height: 19rem;
+        width: 26rem;
     }
-    .seven {
-        grid-row: 7;
-    }  
 }
